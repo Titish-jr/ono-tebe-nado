@@ -22,6 +22,7 @@
 
 .header__links-list-item {
   font-size: 18px;
+  display: flex;
 }
 
 .spisok {
@@ -38,6 +39,8 @@
 .header__link_active {
   text-decoration: none;
   padding-left: 26px;
+  padding-right: 30px;
+  display: block;
 }
 
 .header_logo {
