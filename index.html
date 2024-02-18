@@ -13,9 +13,8 @@
     <header class="header">
       <nav class="header_menu">
         <div class="header__links-list-item">
-          <a href="#" class="header__link_active">главная</a>
-          <ul class="spisok">
-            
+          <ul class="list_menu">
+            <li><a href="#" class="header__link_active">главная</a></li>
             <li><a href="#">посмотреть лоты</a></li>
             <li><a href="#">об аукционе</a></li>
           </ul>
@@ -24,13 +23,17 @@
 
       <div class="header_logo">
         <a href="#">
-          <img src="./images/logo-black.svg" alt="лого" />
+          <img
+            src="./images/logo-black.svg"
+            alt="лого"
+            class="header_logo_img"
+          />
         </a>
       </div>
 
-      <address class="address">
-        <a href="tel:+70000000">+9 999 555 5555</a>
-        <a href="mailto:mail@example.com"><br />info@sobaka.ge</a>
+      <address class="address header_address">
+        <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge"><br />info@sobaka.ge</a>
         <p>
           наб. Принсенграхт 263-<br />
           265, Амстердам
@@ -39,34 +42,40 @@
     </header>
 
     <main>
-      <img
-        src="images/cover.jpg"
-        alt="Красочное фоновое изображение"
-        class="overlay"
-      />
+      <section class="cover">
+        <div class="overlay">
+          <div class="cover_title">
+            <h1 class="cover_text first_line_text">
+              о<span class="first_line_indent">но</span>
+            </h1>
+            <h1 class="cover_text second_line_text">
+              те<span class="second_line_indent">бе</span>
+            </h1>
+            <h1 class="cover_text third_line_text">
+              <span class="third_line_indent">н</span
+              ><span class="third_line_indent-second">ад</span>о
+            </h1>
+          </div>
 
-      <div class="cover_title">
-        <h1 class="cover_text text-ono">он<span class="padding">о</span></h1>
-        <h1 class="cover_text text-tebe">теб<span class="padding">е</span></h1>
-        <h1 class="cover_text text-nado">
-          н<span class="padding_text-nado">адо</span>
-        </h1>
-      </div>
+          <div class="cover_discraption-text">
+            <p class="discraption-text">
+              Аукцион вещей, в которые никто не верил
+            </p>
+            <button class="bet-button" type="button">Сделать ставку</button>
+          </div>
+        </div>
+      </section>
 
-      <div class="cover_discraption-text">
-        <p class="discraption-text">Аукцион вещей, в которые никто не верил</p>
-        <button class="bet-button">Сделать ставку</button>
-      </div>
-
-      <div class="lots">
+      <section class="lots">
         <h2 class="lots_heding">Лоты</h2>
 
         <div class="lots__card-list">
           <a href="#" class="card-link">
             <div class="card">
               <div class="card_type_film">
+                <div class="overlay"></div>
                 <h3 class="card__title">
-                  <ins>Фильм режиссёра, который бросил киношколу</ins>
+                  Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -80,11 +89,9 @@
           <a href="#" class="card-link">
             <div class="card">
               <div class="card_type_book">
+                <div class="overlay"></div>
                 <h3 class="card__title">
-                  <ins
-                    >Книга, где описан один скучный день из жизни рекламного
-                    агента</ins
-                  >
+                  Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
@@ -101,11 +108,9 @@
           <a href="#" class="card-link">
             <div class="card">
               <div class="card_type_picture">
+                <div class="overlay"></div>
                 <h3 class="card__title">
-                  <ins
-                    >Картина, которую повторит даже 5-летний сын маминой
-                    подруги</ins
-                  >
+                  Картина, которую повторит даже 5-летний сын маминой подруги >
                 </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
@@ -117,50 +122,51 @@
             </div>
           </a>
         </div>
-        <a href="#" class="lots__look-more-link"
-          ><span class="look-more-link">посмотреть больше</span></a
-        >
-      </div>
-    </main>
+        <a href="#" class="lots__look-more-link">посмотреть больше</a>
+      </section>
 
-    <section class="about">
-      <div class="about_column">
-        <div class="about__logo">
-          <img
-            src="./images/logo-white.svg"
-            alt="Логотип"
-            class="about__logo-image"
-          />
-        </div>
-        <h4 class="about__title">Об аукционе</h4>
-        <p class="about__text">
-          <span class="about__text margin_bottom"
-            >Здесь вы не встретите очередное пафосное собрание невероятно
+      <section class="about">
+        <div class="about_column">
+          <div class="about__logo">
+            <img
+              src="./images/logo-white.svg"
+              alt="Логотип"
+              class="about__logo-image"
+            />
+          </div>
+          <h2 class="about__title">Об аукционе</h2>
+          <p class="about__text">
+            Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-            странные вещи, созданные любителями?</span
-          >Слишком сложные или, наоборот, слишком простые. Опережающие своё
-          время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-          Когда-то они казались просто неудачными. Но, несмотря на критику,
-          кажущуюся простоту или сложность, сейчас без этих лотов невозможно
-          представить современную культуру. Когда в эти вещи не верил никто,
-          продолжали верить их создатели. И сейчас эти лоты стали культовыми.
-        </p>
-      </div>
-    </section>
+            странные вещи, созданные любителями?
+          </p>
+          <p class="about__text">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё
+            время. В пух и прах растерзанные критиками. Непринятые и непонятые.
+            Когда-то они казались просто неудачными. Но, несмотря на критику,
+            кажущуюся простоту или сложность, сейчас без этих лотов невозможно
+            представить современную культуру. Когда в эти вещи не верил никто,
+            продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+          </p>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <address class="address">
-        <a href="tel:+70000000">+9 999 555 5555</a>
-        <a href="mailto:mail@example.com"><br />info@sobaka.ge</a>
+        <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
+        <a href="info@sobaka.ge"><br />info@sobaka.ge</a>
         <p>
           наб. Принсенграхт 263-<br />
           265, Амстердам
         </p>
       </address>
       <nav class="footer__menu-list">
-        <a href="#" class="footer__menu-link_active">главная</a>
+        <a href="#" class="footer__menu-link footer__menu-link-active"
+          >главная</a
+        >
         <a href="#" class="footer__menu-link">посмотреть лоты</a>
         <a href="#" class="footer__menu-link">об аукционе</a>
       </nav>
