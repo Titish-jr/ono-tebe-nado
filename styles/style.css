@@ -24,11 +24,6 @@
   grid-column: 1/2;
 }
 
-.header__links-list-item {
-  font-size: 18px;
-  display: flex;
-}
-
 .list_menu {
   list-style: circle;
   display: grid;
@@ -44,7 +39,6 @@
 .header__link_active {
   text-decoration: none;
   padding-left: 26px;
-  
 }
 
 .link_active-nostyle {
@@ -68,19 +62,21 @@
   background-size: cover;
   min-height: 757px;
   position: relative;
+  z-index: 0;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .cover_title {
   min-width: 1000px;
-  min-height: 355px;
   padding: 165px 50px 135px;
   display: flex;
   flex-direction: column;
@@ -97,30 +93,22 @@
   color: #ffffff;
 }
 
-.first_line_text {
+.cover_text_position-start {
   align-self: flex-start;
   line-height: 115px;
 }
 
-.third_line_text {
+.cover_text_position-end {
   align-self: flex-end;
   line-height: 95px;
   letter-spacing: 0px;
 }
 
-.first_line_indent {
+.cover_text_gap {
   letter-spacing: 60px;
 }
 
-.second_line_indent {
-  letter-spacing: 60px;
-}
-
-.third_line_indent {
-  letter-spacing: 60px;
-}
-
-.third_line_indent-second {
+.cover_text_gap_lower {
   letter-spacing: 30px;
 }
 
@@ -153,7 +141,7 @@
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   line-height: 26px;
 }
 
@@ -175,7 +163,7 @@
 
 .lots__card-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -184,6 +172,10 @@
   min-height: 563px;
   display: flex;
   position: relative;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-bottom: 40px;
+  z-index: -1;
 }
 
 .card_type_film {
@@ -191,10 +183,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding-bottom: 40px;
 }
 
 .card_type_book {
@@ -202,10 +190,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding-bottom: 40px;
 }
 
 .card_type_picture {
@@ -213,10 +197,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding-bottom: 40px;
 }
 
 .card-link {
@@ -253,10 +233,9 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
-
   display: block;
   padding-left: 40px;
-  padding-top: 30px;
+  margin-top: -10px;
   max-width: 250px;
 }
 

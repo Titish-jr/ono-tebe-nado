@@ -12,15 +12,13 @@
   <body>
     <header class="header">
       <nav class="header_menu">
-        <div class="header__links-list-item">
-          <ul class="list_menu">
-            <li class="link_active-nostyle">
-              <a href="#" class="header__link_active">главная</a>
-            </li>
-            <li><a href="#">посмотреть лоты</a></li>
-            <li><a href="#">об аукционе</a></li>
-          </ul>
-        </div>
+        <ul class="list_menu">
+          <li class="link_active-nostyle">
+            <a href="#" class="header__link_active">главная</a>
+          </li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
+        </ul>
       </nav>
 
       <div class="header_logo">
@@ -45,26 +43,23 @@
 
     <main>
       <section class="cover">
-        <div class="overlay">
-          <div class="cover_title">
-            <h1 class="cover_text first_line_text">
-              о<span class="first_line_indent">но</span>
-            </h1>
-            <h1 class="cover_text second_line_text">
-              те<span class="second_line_indent">бе</span>
-            </h1>
-            <h1 class="cover_text third_line_text">
-              <span class="third_line_indent">н</span
-              ><span class="third_line_indent-second">ад</span>о
-            </h1>
-          </div>
+        <div class="overlay"></div>
+        <div class="cover_title">
+          <h1 class="cover_text cover_text_position-start">
+            о<span class="cover_text_gap">но</span>
+          </h1>
+          <h1 class="cover_text">те<span class="cover_text_gap">бе</span></h1>
+          <h1 class="cover_text cover_text_position-end">
+            <span class="cover_text_gap">н</span
+            ><span class="cover_text_gap_lower">ад</span>о
+          </h1>
+        </div>
 
-          <div class="cover_discraption-text">
-            <p class="discraption-text">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="bet-button" type="button">Сделать ставку</button>
-          </div>
+        <div class="cover_discraption-text">
+          <p class="discraption-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button" type="button">Сделать ставку</button>
         </div>
       </section>
 
@@ -74,7 +69,7 @@
         <div class="lots__card-list">
           <a href="#" class="card-link">
             <div class="card">
-              <div class="card_type_film">
+              <div class="card_type_film card">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -90,7 +85,7 @@
 
           <a href="#" class="card-link">
             <div class="card">
-              <div class="card_type_book">
+              <div class="card_type_book card">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -109,7 +104,7 @@
 
           <a href="#" class="card-link">
             <div class="card">
-              <div class="card_type_picture">
+              <div class="card_type_picture card">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги >
