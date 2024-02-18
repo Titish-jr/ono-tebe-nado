@@ -44,6 +44,10 @@
 .header__link_active {
   text-decoration: none;
   padding-left: 26px;
+  
+}
+
+.link_active-nostyle {
   list-style: none;
 }
 
