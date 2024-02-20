@@ -182,21 +182,18 @@
   background: url("../images/card-lot-01.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 
 .card_type_book {
   background: url("../images/card-lot-02.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 
 .card_type_picture {
   background: url("../images/card-lot-03.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 
 .card-link {
@@ -211,7 +208,6 @@
   text-transform: uppercase;
   text-decoration: underline;
   max-width: 254px;
-  width: 100%;
   padding-top: 51px;
   margin: auto;
   z-index: 1;
@@ -223,7 +219,6 @@
   line-height: 24px;
   color: #fff;
   max-width: 254px;
-  width: 100%;
   margin: auto;
   margin-bottom: 10px;
   z-index: 1;
